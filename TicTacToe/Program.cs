@@ -10,6 +10,7 @@ namespace TicTacToe
             var tictactoegame = new TicTacToeGame();
             //tictactoegame.ChooseSymbol();
             tictactoegame.GameBoard();
+            tictactoegame.GamePlay();
         }
     }
 }

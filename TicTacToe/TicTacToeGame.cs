@@ -47,10 +47,26 @@ namespace TicTacToe
             Console.WriteLine("|" + array[3] + "|" + array[4] + "|" + array[5] + "|");
             Console.WriteLine("----------------------");
             Console.WriteLine("|" + array[6] + "|" + array[7] + "|" + array[8] + "|");
+           
+            
+        }
+        public void GamePlay()
+        {
+            GameBoard();
             Console.WriteLine("Choose box to enter:");
-            var p1=Convert.ToInt32(Console.ReadLine());
-            if (p1 == 1 )
+            var p1 = Convert.ToInt32(Console.ReadLine());
+
+            Random random = new Random();
+            int comp = random.Next(0, 10);
+            if (p1 == 1)
             {
+                Console.WriteLine("|" + "X" + "|" + array[1] + "|" + array[2] + "|");
+                Console.WriteLine("---------------------");
+                Console.WriteLine("|" + array[3] + "|" + array[4] + "|" + array[5] + "|");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("|" + array[6] + "|" + array[7] + "|" + array[8] + "|");
+
+                Console.WriteLine("\nComputers Chance ::");
                 Console.WriteLine("|" + "X" + "|" + array[1] + "|" + array[2] + "|");
                 Console.WriteLine("---------------------");
                 Console.WriteLine("|" + array[3] + "|" + array[4] + "|" + array[5] + "|");
@@ -58,6 +74,5 @@ namespace TicTacToe
                 Console.WriteLine("|" + array[6] + "|" + array[7] + "|" + array[8] + "|");
             }
         }
-
     }
 }
