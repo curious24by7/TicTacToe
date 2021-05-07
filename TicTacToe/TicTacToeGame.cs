@@ -47,7 +47,16 @@ namespace TicTacToe
             Console.WriteLine("|" + array[3] + "|" + array[4] + "|" + array[5] + "|");
             Console.WriteLine("----------------------");
             Console.WriteLine("|" + array[6] + "|" + array[7] + "|" + array[8] + "|");
-
+            Console.WriteLine("Choose box to enter:");
+            var p1=Convert.ToInt32(Console.ReadLine());
+            if (p1 == 1 )
+            {
+                Console.WriteLine("|" + "X" + "|" + array[1] + "|" + array[2] + "|");
+                Console.WriteLine("---------------------");
+                Console.WriteLine("|" + array[3] + "|" + array[4] + "|" + array[5] + "|");
+                Console.WriteLine("----------------------");
+                Console.WriteLine("|" + array[6] + "|" + array[7] + "|" + array[8] + "|");
+            }
         }
 
     }
