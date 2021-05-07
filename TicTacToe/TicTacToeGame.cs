@@ -11,13 +11,6 @@ namespace TicTacToe
         {
             
         }
-        public void GameBoard()
-        {
-            Console.WriteLine("|"+"|"+ "|"+ "|");
-            Console.WriteLine("----------------------");
-            Console.WriteLine("|" + "|" + "|" + "|");
-            Console.WriteLine("----------------------");
-            Console.WriteLine("|" + "|" + "|" + "|");
-        }
+        
     }
 }
